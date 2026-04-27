@@ -82,16 +82,16 @@ local Library = {
 
     IsLightTheme = false,
     Scheme = {
-        BackgroundColor = Color3.fromRGB(15, 15, 15),
-        MainColor = Color3.fromRGB(25, 25, 25),
-        AccentColor = Color3.fromRGB(125, 85, 255),
-        OutlineColor = Color3.fromRGB(40, 40, 40),
-        FontColor = Color3.new(1, 1, 1),
+        BackgroundColor = Color3.fromRGB(18, 18, 18),
+        MainColor = Color3.fromRGB(30, 30, 30),
+        AccentColor = Color3.fromRGB(140, 100, 255),
+        OutlineColor = Color3.fromRGB(45, 45, 45),
+        FontColor = Color3.new(230, 230, 230),
         Font = Font.fromEnum(Enum.Font.Code),
 
-        Red = Color3.fromRGB(255, 50, 50),
-        Dark = Color3.new(0, 0, 0),
-        White = Color3.new(1, 1, 1),
+        Red = Color3.fromRGB(255, 70, 70),
+        Dark = Color3.new(5, 5, 5),
+        White = Color3.new(245, 245, 245),
     },
 
     Registry = {},
@@ -106,7 +106,7 @@ local ObsidianImageManager = {
 
             Id = nil
         },
-        
+
         SaturationMap = {
             RobloxId = 4155801252,
             Path = "Obsidian/assets/SaturationMap.png",
@@ -2159,7 +2159,7 @@ do
                 if SpecialKeysInput[Input.UserInputType] == Key then
                     KeyPicker.Toggled = not KeyPicker.Toggled
                     KeyPicker:DoClick()
-                    
+
                 elseif Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Key then
                     KeyPicker.Toggled = not KeyPicker.Toggled
                     KeyPicker:DoClick()
@@ -5573,7 +5573,7 @@ function Library:CreateWindow(WindowInfo)
         local TabContainer
         local TabLeft
         local TabRight
-		
+
         local WarningBox
         local WarningBoxScrollingFrame
         local WarningTitle
@@ -5829,7 +5829,7 @@ function Library:CreateWindow(WindowInfo)
                     WarningText.AbsoluteSize.X
                 )
                 Y = 14 + 2 + Y + 8
-				
+
                 if WarningBoxLockSize == true and Y >= MaximumSize then Y = MaximumSize; end
 
                 WarningBox.Size = UDim2.new(1, 0, 0, Y)
