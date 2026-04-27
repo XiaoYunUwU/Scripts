@@ -273,15 +273,15 @@ function notifications:notify(options)
 
     mainFrame.Visible = true
     task.spawn(function()
-        mainFrame:tween{BackgroundTransparency = 0}
+        mainFrame:tween{BackgroundTransparency = 0.5}
         task.wait(0.1)
-        if buttonContainer then buttonContainer:tween{BackgroundTransparency = 0} end
+        if buttonContainer then buttonContainer:tween{BackgroundTransparency = 0.5} end
         task.wait(0.15)
         icon:tween{ImageTransparency = 0}
         title:tween{TextTransparency = 0}
         if description then description:tween{TextTransparency = 0} end
-        if acceptBtn then acceptBtn:tween{BackgroundTransparency = 0, TextTransparency = 0} end
-        if dismissBtn then dismissBtn:tween{BackgroundTransparency = 0, TextTransparency = 0} end
+        if acceptBtn then acceptBtn:tween{BackgroundTransparency = 0.5, TextTransparency = 0} end
+        if dismissBtn then dismissBtn:tween{BackgroundTransparency = 0.5, TextTransparency = 0} end
 
         if not hasButtons and options.Length then
             task.wait(options.Length)
