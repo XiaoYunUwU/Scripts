@@ -4,7 +4,7 @@ notify({
     Accept = {
         Text = "复制群号",
         Callback = function()
-            setclipboard("1057545155")
+            setclipboard("996419273")
         end
     },
     Dismiss = {
