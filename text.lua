@@ -1,10 +1,10 @@
 notify({
     Title = "XA：提示",
-    Description = "欢迎加入XA Hub二群：\n996419273",
+    Description = "欢迎加入XA Hub主群：\n1057545155",
     Accept = {
         Text = "复制群号",
         Callback = function()
-            setclipboard("996419273")
+            setclipboard("1057545155")
         end
     },
     Dismiss = {
