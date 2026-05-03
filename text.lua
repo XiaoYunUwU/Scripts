@@ -1,4 +1,4 @@
-notify({
+--[[notify({
     Title = "XA：提示",
     Description = "欢迎加入XA Hub主群：\n1057545155",
     Accept = {
@@ -13,3 +13,4 @@ notify({
         end
     }
 })
+]]
