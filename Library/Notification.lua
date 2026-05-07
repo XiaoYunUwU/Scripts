@@ -127,7 +127,7 @@ function notifications:notify(options)
     })
 
     local icon = content:object("ImageLabel", {
-        Image = "rbxassetid://6031071053",
+        Image = "rbxassetid://123416041901566",
         BackgroundTransparency = 1,
         ImageColor3 = theme.Icon,
         AnchorPoint = Vector2.new(0, 0.5),
