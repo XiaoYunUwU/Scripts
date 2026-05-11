@@ -1,6 +1,6 @@
 notify({
     Title = "XA：提示",
-    Description = "请加入XA Hub主群：1057545155",
+    Description = "欢迎加入XA Hub主群：\n996419273",
     Accept = {
         Text = "复制群号",
         Callback = function()
@@ -12,3 +12,4 @@ notify({
         Callback = function()
         end
     }
+})
